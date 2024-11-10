@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center p-8">
+    <main className="flex flex-col items-center p-8 bg-black">
       <h1 className="text-4xl md:text-3xl font-bold mb-6 animate-slideIn text-center">Welcome to My Portfolio</h1>
 
       {/* Profile Image Section */}

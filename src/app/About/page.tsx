@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center p-8 space-y-8">
+    <div className="flex flex-col items-center p-8 space-y-8 bg-black">
       <h1 className="text-4xl font-bold text-white animate-slideIn">About Me</h1>
       <p className="text-lg text-white text-center">
         I am an Electrical Engineer with a passion for working with HV Power Stations & HV Power Sub Stations.

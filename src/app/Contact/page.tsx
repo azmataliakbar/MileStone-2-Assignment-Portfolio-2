@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Contact() {
   return (
-    <main className="flex flex-col items-center p-8 space-y-8">
+    <main className="flex flex-col items-center p-8 space-y-8 bg-black">
       <h1 className="text-4xl font-bold text-white animate-slideIn">Contact Me</h1>
       <p className="text-lg text-white text-center">
         Feel free to reach out for collaborations or job opportunities.
