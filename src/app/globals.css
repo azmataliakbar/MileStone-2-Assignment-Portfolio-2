@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* globals.css or any other stylesheet */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-5%);
+    color: rgb(5, 231, 5); /* Initial color */
+  }
+  50% {
+    transform: translateX(5%);
+    color: red; /* Change to a different color midway */
+  }
+  100% {
+    transform: translateX(0);
+    color: #3498db; /* Final color */
+  }
+}
+
+.animate-slideIn {
+  text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+  animation: slideIn 5.5s ease-out infinite alternate;
+}
+
+@keyframes glowingShadow {
+  0% {
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+  }
+}
+
+.glowing-border {
+  animation: glowingShadow 2s infinite alternate;
+}
+
+@keyframes glowingBorder {
+  0% {
+    box-shadow: 0 0 10px #8000ff, 0 0 10px #8000ff, 0 0 20px #8000ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #8000ff, 0 0 20px #8000ff, 0 0 30px #8000ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #8000ff, 0 0 10px #8000ff, 0 0 20px #8000ff;
+  }
+}
+
+.glowing-border-1 {
+  animation: glowingBorder 2s infinite alternate;
+}
+
+@keyframes glowingPurple {
+  0% {
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  }
+}
+
+.glowing-border-2 {
+  animation: glowingPurple 2s infinite alternate;
+}
+
+@keyframes glowingGreen {
+  0% {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  }
+  100% {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+}
+
+.glowing-border-3 {
+  animation: glowingGreen 2s infinite alternate;
+}
+
+
